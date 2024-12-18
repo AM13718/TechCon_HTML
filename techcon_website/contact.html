@@ -27,15 +27,17 @@
         <!--Embedded Google maps-->
         <iframe src="https://maps.app.goo.gl/ppiQdaEsjUQ8MNoW6" width="600" height="400" title="Conference Location"></iframe>
         <!--Contact Us Form-->
-        <form>
-            <label for="user's name">User's Name:</label>
-            <input type="text" id="user's name" name="user's name" required><br>
-            <label for="email"></label>Email:</label>
-            <input type="email" id="email" name="email" required><br>
-            <label for="textarea">Text Area</label>
-            <input type="textarea" id="textarea" name="textarea" required><br>
-            <button type="Submit">Send Message</button>
-        </form>
+        <form action="mailto:email@example.com" method="post" enctype="text/plain">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required><br><br>
+            
+            <label for="message">Your Message:</label>
+            <textarea id="message" name="message" rows="4" cols="50"></textarea><br><br>
+            
+            <a href="https://example.com" target="_blank">Visit Example</a><br><br>
+            
+            <button type="submit">Submit</button>
+          </form>
       </main>
     </body>
 
